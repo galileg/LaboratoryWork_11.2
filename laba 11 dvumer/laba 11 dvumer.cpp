@@ -48,7 +48,7 @@ void DeleteSTL(list<int>l)
 	list <int> ::iterator startpos = tmp.begin();
 	list <int> ::iterator endpos = tmp.end();
 	int i = 0;
-	cout << "Ваш список бзе четных элементов:" << endl;
+	cout << "Ваш список без четных элементов:" << endl;
 	for (startpos; startpos != endpos; startpos++)
 	{
 		cout << *startpos << " ";
@@ -148,11 +148,10 @@ int main()
 	fillListSTL(size);
 	PrintlistSTL();
 	DeleteSTL(mylist);
-	PrintlistSTL();
 
-
+	cout << "Введите элементы списка, реализованного через структуру" << endl;
 	spisok* list = make(size);
-	cout << "Ваш список:" << endl;
+	cout<< endl << "Ваш список:" << endl;
 	print(list);
 	DeleteElements(list, size);
 	cout << "Список без элементов с четным номером:" << endl;
